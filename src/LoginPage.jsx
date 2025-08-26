@@ -34,7 +34,7 @@ function LoginPage() {
         const userDetails = {
             username:userName, password
         }
-        const url = '/apis/login';
+        const url = 'https://apis.ccbp.in/apis/login';
         const options = {
             method: 'POST',
             body: JSON.stringify(userDetails)
