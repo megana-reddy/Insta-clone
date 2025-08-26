@@ -27,7 +27,7 @@ useEffect(getStories,[])
       <div className='flex justify-between w-250 mt-10'>
         {story.map((eachItem)=>{
           return(<div className='flex flex-col'>
-            <img src={`${eachItem.story_url}`} className='rounded-4xl size-15' />
+            <img src={`${eachItem.story_url}`} className='rounded-4xl size-15 border-pink-700 border-3' />
             <p className='text-sm ml-4'>{eachItem.user_name.split(" ")[0]}</p>
           </div>)
         })}
