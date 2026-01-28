@@ -23,7 +23,7 @@ function Navbar(){
   }
 
   function handleHomePage(){
-    navigate('/home')
+    navigate('/')
   }
 
   return (

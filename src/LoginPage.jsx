@@ -11,7 +11,7 @@ function LoginPage() {
   useEffect(()=>{
     const token = localStorage.getItem('authToken');
     if(token){
-      navigate('/home', {replace: true}) // redirects to home page and replace:true preventscoming back to login
+      navigate('/', {replace: true}) // redirects to home page and replace:true preventscoming back to login
     }
   }, []) //add dependency array to run onlt once on mount
 
@@ -45,7 +45,7 @@ function LoginPage() {
             console.log("okiee")
             // here in local storage the jwt_token is getting stored in a key value pair where key is authToken and value is jwt_token.
             localStorage.setItem('authToken', data.jwt_token); 
-            navigate('/home', { replace: true }); // Redirect and replace login history
+            navigate('/', { replace: true }); // Redirect and replace login history
         }
         else{
           setErrMsg(data.error_msg)
